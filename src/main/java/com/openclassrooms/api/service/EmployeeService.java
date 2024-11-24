@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.openclassrooms.api.repository.EmployeeRepository;
+import com.openclassrooms.api.model.Employee;
 
 import lombok.Data;
 
