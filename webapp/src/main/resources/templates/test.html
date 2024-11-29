@@ -1,11 +1,18 @@
 <!doctype html>
 <html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="static/style.css">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
 </head>
 <body>
+<tbody>
     <h1> Hello World !</h1>
+    <tr th:each="role : ${role}">
+        <td><span th:text="${role.name}"> Rôle </span></td>
+    </tr>
+</tbody>
 </body>
 </html>

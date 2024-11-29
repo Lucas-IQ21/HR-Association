@@ -25,11 +25,9 @@ public class EmployeeService {
     public Employee saveEmployee(Employee employee) {
         Employee savedEmployee;
 
-        // Règle de gestion : Le nom de famille doit être mis en majuscule.
         employee.setLastName(employee.getLastName().toUpperCase());
 
         if(employee.getId() == null) {
-            // Si l'id est nul, alors c'est un nouvel employé.
             savedEmployee = employeeProxy.createEmployee(employee);
         } else {
             savedEmployee = employeeProxy.updateEmployee(employee);

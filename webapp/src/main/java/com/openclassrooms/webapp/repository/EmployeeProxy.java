@@ -23,7 +23,6 @@ public class EmployeeProxy {
      * Get all employees
      * @return An iterable of all employees
      */
-
     public Iterable<Employee> getEmployees() {
         String baseApiUrl = properties.getApiUrl();
         String getEmployeesUrl = baseApiUrl + "/employees";
