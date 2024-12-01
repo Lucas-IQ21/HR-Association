@@ -24,6 +24,5 @@ public class WebappApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 
-
 	}
 }
